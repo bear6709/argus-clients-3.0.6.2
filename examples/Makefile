@@ -1,0 +1,166 @@
+#
+#  Argus Client Software. Tools to read, analyze and manage Argus data.
+#  Copyright (c) 2000-2012 QoSient, LLC
+#  All rights reserved.
+# 
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2, or (at your option)
+#  any later version.
+# 
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  */
+# 
+# 
+
+NOOP = $(SHELL) -c true
+NOECHO = @
+
+CC = gcc
+
+INSTALL = /usr/bin/install -c
+INSTALL_PROGRAM = ${INSTALL}
+INSTALL_DATA = ${INSTALL} -m 644
+
+DEFS = -DHAVE_CONFIG_H
+LIBS = 
+WRAPLIBS = 
+
+CFLAGS = -g
+LDFLAGS = -g
+
+prefix = /usr/local
+exec_prefix = ${prefix}
+datarootdir = ${prefix}/share
+
+srcdir = .
+incdir = /usr/local/include
+docdir = ${datarootdir}/doc/argus-clients-3.0
+
+#### End of system configuration section. ####
+
+SHELL = /bin/sh
+
+DIRS = ./raconvert ./radark ./radump ./raevent ./rafilter ./ragraph ./ragrep ./rahisto \
+	./rahosts ./ralabel ./rapath ./rapolicy ./raports ./rarpwatch ./raservices \
+	./rastream ./rastrip ./ratop ./ratimerange ./ratemplate 
+
+.c.o:
+	$(CC) -c $(CPPFLAGS) $(DEFS) $(CFLAGS) $<
+
+.PHONY: install 
+
+all: force
+	@for i in  $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		echo "making in $$i"; \
+		(cd $$i > /dev/null; $(MAKE)); \
+		fi; \
+	done
+
+.PHONY: all
+
+raconvert: ../common
+radark: ../common
+radump: ../common
+raevent: ../common
+rafilter: ../common
+ragraph: ../common
+ragrep: ../common
+rahisto: ../common
+rahosts: ../common
+ralabel: ../common
+ramysql: ../common
+rapath: ../common
+rapolicy: ../common
+raports: ../common
+rarpwatch: ../common
+raservices: ../common
+rastream: ../common
+rastrip: ../common
+ratop: ../common
+ratimerange: ../common
+ratemplate: ../common
+
+install:  force
+	@for i in  $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		echo "making in $$i"; \
+		(cd $$i > /dev/null; $(MAKE) install ); \
+		fi; \
+	done
+
+uninstall:
+	@for i in  $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		echo "making in $$i"; \
+		(cd  $$i > /dev/null; $(MAKE) uninstall); \
+		fi; \
+	done
+
+TAGS: $(SRCS)
+	etags $(SRCS)
+
+.PHONY: clean mostlyclean distclean realclean dist
+
+clean: force
+	rm -f config.log
+	@for i in $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		(cd $$i > /dev/null; $(MAKE) clean); \
+		fi; \
+	done
+
+mostlyclean: clean
+
+distclean: clean
+	rm -f config.*
+	rm -f TAGS
+	rm -f lib/*.a
+	rm -f bin/ra*
+	rm -f Makefile
+	@for i in $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		(cd $$i > /dev/null; $(MAKE) distclean); \
+		fi; \
+	done
+
+clobber realclean: force
+	rm -f TAGS
+	rm -f lib/*.a
+	rm -f include/argus_config.h
+	rm -f include/tm.h
+	rm -f bin/ra*
+	rm -rf log
+	@for i in $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		(cd $$i > /dev/null; $(MAKE) distclean); \
+		fi; \
+	done
+	rm -f ./Makefile config.*
+
+dist: $(DISTFILES) distclean
+	echo argus-clients-`cat VERSION` > .fname
+	rm -rf `cat .fname`
+	mkdir `cat .fname`
+	tar cf - $(DISTFILES) | (cd `cat .fname`; tar xpf -)
+	ls -lR `cat .fname` | fgrep CVS: | sed 's/:$///' > exfile
+	tar -X exfile -chozf `cat .fname`.tar.gz `cat .fname`
+	rm -rf `cat .fname` .fname exfile
+
+force:  /tmp
+depend: $(GENSRC) force
+	@for i in $(DIRS) ; do \
+		if [ -d $$i ] ; then \
+		(cd $$i > /dev/null; $(MAKE) depend); \
+		fi; \
+	done
+
+# Prevent GNU make v3 from overflowing arg limit on SysV.
+.NOEXPORT:

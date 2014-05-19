@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: argus-clients
+Description: argus client program library
+Version: 3.0.5
+Requires:
+Libs: ${libdir}/argus_parse.a ${libdir}/argus_common.a ${libdir}/argus_client.a -lm   -lpthread  
+Cflags: -I${includedir}/argus  -DHAVE_CONFIG_H

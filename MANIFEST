@@ -1,0 +1,511 @@
+/*
+ * Argus Software
+ * Copyright (c) 2000-2012 QoSient, LLC
+ * All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  */
+ *
+ */
+
+Argus Clients 3.0.6.2 distribution
+total 984
+-r--r--r--   1 carter  staff     523 Apr 17 12:22 AUTHORS
+-r--r--r--   1 carter  staff    7025 Apr 17 12:21 CHANGES
+-r--r--r--   1 carter  staff   35147 Apr 17 12:21 COPYING
+-r--r--r--   1 carter  staff    3943 Apr 17 12:21 CREDITS
+-r--r--r--   1 carter  staff   29100 Jun 19 10:50 ChangeLog
+-r--r--r--   1 carter  staff    8561 Apr 17 12:21 INSTALL
+-r--r--r--   1 carter  staff   22706 Jun 19 11:48 MANIFEST
+-r--r--r--   1 carter  staff    9030 Apr 17 12:21 Makefile.in
+-r--r--r--   1 carter  staff    3850 Apr 17 12:21 README
+-r--r--r--   1 carter  staff       8 Jun 15 16:28 VERSION
+-r--r--r--   1 carter  staff     609 Apr 17 12:22 aclocal.m4
+-r--r--r--   1 carter  staff   57082 May  9 10:17 acsite.m4
+drwxr-xr-x   4 carter  staff     136 Jun 19 11:48 bin
+drwxr-xr-x  13 carter  staff     442 Jun 19 11:48 clients
+drwxr-xr-x  17 carter  staff     578 Jun 19 11:48 common
+drwxr-xr-x   6 carter  staff     204 Apr 17 12:21 config
+-rwxr-xr-x   1 carter  staff  284879 May  9 10:05 configure
+-r--r--r--   1 carter  staff    9774 May  9 10:17 configure.ac
+drwxr-xr-x  25 carter  staff     850 Jun 19 11:48 examples
+drwxr-xr-x  41 carter  staff    1394 Jun 19 11:48 include
+drwxr-xr-x   4 carter  staff     136 Jun 19 11:48 lib
+drwxr-xr-x   5 carter  staff     170 Apr 17 12:21 man
+drwxr-xr-x   6 carter  staff     204 Apr 17 12:21 support
+
+./bin:
+total 32
+-r-xr-xr-x  1 carter  staff  9459 Apr 17 12:21 argusclientbug
+-r-xr-xr-x  1 carter  staff  2350 Apr 17 12:21 mkdep
+
+./clients:
+total 848
+-r--r--r--  1 carter  staff    4460 Apr 17 12:22 Makefile.in
+-r--r--r--  1 carter  staff    2423 Apr 17 12:21 README
+-r--r--r--  1 carter  staff   26122 Apr 17 12:22 ra.c
+-r--r--r--  1 carter  staff   45369 May  7 12:29 rabins.c
+-r--r--r--  1 carter  staff   33611 Jun 19 08:44 racluster.c
+-r--r--r--  1 carter  staff   41495 Apr 17 12:22 racount.c
+-r--r--r--  1 carter  staff  118896 Jun 15 10:05 radium.c
+-r--r--r--  1 carter  staff   76181 Apr 17 12:22 ranonymize.c
+-r--r--r--  1 carter  staff    1836 Apr 17 12:22 ranonymize.h
+-r--r--r--  1 carter  staff   13302 Apr 17 12:22 rasort.c
+-r--r--r--  1 carter  staff   40722 Apr 17 12:22 rasplit.c
+
+./common:
+total 4104
+-r--r--r--  1 carter  staff    5471 Apr 17 12:22 Makefile.in
+-r--r--r--  1 carter  staff   17972 Apr 17 12:22 argus_auth.c
+-rw-r--r--  1 carter  staff  677222 Jun 19 09:38 argus_client.c
+-r--r--r--  1 carter  staff  133611 Apr 17 12:22 argus_code.c
+-r--r--r--  1 carter  staff    2106 Apr 17 12:22 argus_debug.h
+-r--r--r--  1 carter  staff   21711 Apr 17 12:22 argus_event.c
+-r--r--r--  1 carter  staff   82994 May  9 14:17 argus_filter.c
+-r--r--r--  1 carter  staff    4479 Apr 17 12:22 argus_grep.c
+-r--r--r--  1 carter  staff  130204 Jun 15 10:05 argus_import.c
+-rw-r--r--@ 1 carter  staff  119101 Jun 19 11:39 argus_label.c
+-r--r--r--  1 carter  staff   13155 Apr 17 12:22 argus_main.c
+-r--r--r--  1 carter  staff   11458 Jun 15 10:05 argus_parser.c
+-rw-r--r--  1 carter  staff  821240 Jun 19 10:37 argus_util.c
+-r--r--r--  1 carter  staff   13394 Apr 17 12:22 grammar.y
+-r--r--r--  1 carter  staff    9274 Apr 17 12:22 scanner.l
+
+./config:
+total 168
+-r-xr-xr-x  1 carter  staff  39923 Apr 17 12:21 config.guess
+-r-xr-xr-x  1 carter  staff  29628 Apr 17 12:21 config.sub
+-r-xr-xr-x  1 carter  staff   5585 Apr 17 12:21 install-sh
+-r-xr-xr-x  1 carter  staff    616 Apr 17 12:21 mkinstalldirs
+
+./examples:
+total 16
+-r--r--r--   1 carter  staff  3684 Apr 17 12:21 Makefile.in
+-r--r--r--   1 carter  staff  3864 Apr 17 12:21 README
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 raconvert
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 radark
+drwxr-xr-x  57 carter  staff  1938 Jun 19 11:48 radump
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 raevent
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 rafilter
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 ragraph
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 ragrep
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 rahisto
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 rahosts
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 ralabel
+drwxr-xr-x   9 carter  staff   306 Jun 19 11:48 ramysql
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 rapath
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 rapolicy
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 raports
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 rarpwatch
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 raservices
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 rastream
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 rastrip
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 ratemplate
+drwxr-xr-x   5 carter  staff   170 Jun 19 11:48 ratimerange
+drwxr-xr-x   6 carter  staff   204 Jun 19 11:48 ratop
+
+./examples/raconvert:
+total 224
+-r--r--r--  1 carter  staff   3817 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   3407 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  86320 Apr 18 14:18 raconvert.c
+-r--r--r--  1 carter  staff  15182 Apr 17 12:22 raconvert.h
+
+./examples/radark:
+total 40
+-r--r--r--  1 carter  staff   3177 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   1087 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  10570 Apr 17 12:22 radark.pl
+
+./examples/radump:
+total 2112
+-r--r--r--  1 carter  staff   4146 May  9 10:17 Makefile.in
+-r--r--r--  1 carter  staff   1963 Apr 17 12:21 README
+-r--r--r--  1 carter  staff   7118 Apr 17 12:21 aodv.h
+-r-xr-xr-x  1 carter  staff    831 Apr 17 12:21 bgp.h
+-r--r--r--  1 carter  staff   7849 Apr 17 12:21 bootp.h
+-r--r--r--  1 carter  staff   5879 Apr 17 12:21 gmpls.c
+-r--r--r--  1 carter  staff   1212 Apr 17 12:21 gmpls.h
+-r--r--r--  1 carter  staff   7062 Apr 17 12:21 interface.h
+-r--r--r--  1 carter  staff   6654 Apr 17 12:21 ipsec_doi.h
+-r--r--r--  1 carter  staff  13250 Apr 17 12:21 isakmp.h
+-r--r--r--  1 carter  staff   2866 Apr 17 12:21 l2tp.h
+-r-xr-xr-x  1 carter  staff   1969 Apr 17 12:21 l2vpn.c
+-r-xr-xr-x  1 carter  staff    826 Apr 17 12:21 l2vpn.h
+-r--r--r--  1 carter  staff  26956 Apr 17 12:21 mib.h
+-r--r--r--  1 carter  staff  10708 Apr 17 12:21 nameser.h
+-r--r--r--  1 carter  staff  21405 Apr 17 12:22 nlpid.h
+-r--r--r--  1 carter  staff   5234 Apr 17 12:21 ntp.h
+-r--r--r--  1 carter  staff   5606 Apr 17 12:21 oakley.h
+-r--r--r--  1 carter  staff   5947 Apr 17 12:21 oui.h
+-r--r--r--  1 carter  staff  14549 Apr 17 12:21 print-aodv.c
+-r--r--r--  1 carter  staff  10986 Apr 17 12:21 print-arp.c
+-r--r--r--  1 carter  staff   1934 Apr 17 12:21 print-beep.c
+-r--r--r--  1 carter  staff  11172 Apr 17 12:21 print-bfd.c
+-r--r--r--  1 carter  staff  79320 Apr 17 12:21 print-bgp.c
+-r--r--r--  1 carter  staff  21727 Apr 17 12:21 print-bootp.c
+-r--r--r--  1 carter  staff  21641 Apr 17 12:21 print-domain.c
+-r--r--r--  1 carter  staff   9487 Apr 17 12:21 print-dvmrp.c
+-r--r--r--  1 carter  staff   8384 Apr 17 12:21 print-ether.c
+-r--r--r--  1 carter  staff  11800 Apr 17 12:21 print-igmp.c
+-r--r--r--  1 carter  staff  39728 Apr 17 12:21 print-isakmp.c
+-r--r--r--  1 carter  staff  94714 Apr 17 12:21 print-isoclns.c
+-r--r--r--  1 carter  staff   7369 Apr 17 12:21 print-krb.c
+-r--r--r--  1 carter  staff  22418 Apr 17 12:21 print-l2tp.c
+-r--r--r--  1 carter  staff  21918 Apr 17 12:21 print-ldp.c
+-r--r--r--  1 carter  staff  31287 Apr 17 12:21 print-lmp.c
+-r--r--r--  1 carter  staff   3533 Apr 17 12:21 print-msdp.c
+-r--r--r--  1 carter  staff   9416 Apr 17 12:21 print-ntp.c
+-r--r--r--  1 carter  staff  38309 Apr 17 12:21 print-pim.c
+-r--r--r--  1 carter  staff  29918 Apr 17 12:21 print-pptp.c
+-r--r--r--  1 carter  staff  34750 Apr 17 12:21 print-radius.c
+-r--r--r--  1 carter  staff   8835 Apr 17 12:21 print-rip.c
+-r--r--r--  1 carter  staff  58948 Apr 17 12:21 print-rx.c
+-r--r--r--  1 carter  staff  43844 Apr 17 12:21 print-smb.c
+-r--r--r--  1 carter  staff  50939 Apr 17 12:21 print-snmp.c
+-r--r--r--  1 carter  staff   5227 Apr 17 12:21 print-stp.c
+-r-xr-xr-x  1 carter  staff   4451 Apr 17 12:21 print-syslog.c
+-r--r--r--  1 carter  staff   7558 Apr 17 12:21 print-telnet.c
+-r--r--r--  1 carter  staff   4501 Apr 17 12:21 print-tftp.c
+-r--r--r--  1 carter  staff   4099 Apr 17 12:21 print-timed.c
+-r--r--r--  1 carter  staff  22984 Apr 17 12:22 radump.c
+-r--r--r--  1 carter  staff   3573 Apr 17 12:21 rx.h
+-r--r--r--  1 carter  staff   5555 Apr 17 12:21 smb.h
+-r--r--r--  1 carter  staff  64677 Apr 17 12:21 smbutil.c
+-r--r--r--  1 carter  staff  11294 Apr 17 12:21 telnet.h
+-r--r--r--  1 carter  staff   3781 Apr 17 12:21 timed.h
+
+./examples/raevent:
+total 40
+-r--r--r--  1 carter  staff   3740 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    927 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  11271 Apr 17 12:22 raevent.c
+
+./examples/rafilter:
+total 40
+-r--r--r--  1 carter  staff   3762 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    942 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  11188 Apr 17 12:22 rafilteraddr.c
+
+./examples/ragraph:
+total 272
+-r--r--r--  1 carter  staff   2329 May  9 10:17 Makefile.in
+-r--r--r--  1 carter  staff    949 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  62801 Apr 17 12:22 ragraph.pl
+-r-xr-xr-x  1 carter  staff  62493 Apr 17 12:21 raplot.pl
+
+./examples/ragrep:
+total 56
+-r--r--r--  1 carter  staff   3805 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    950 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  20449 Apr 17 12:22 ragrep.c
+
+./examples/rahisto:
+total 72
+-r--r--r--  1 carter  staff   3811 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    954 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  27400 Apr 17 12:22 rahisto.c
+
+./examples/rahosts:
+total 40
+-r--r--r--  1 carter  staff  3297 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   934 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  5471 Apr 17 12:22 rahosts.pl
+-r--r--r--  1 carter  staff  1906 Apr 17 12:21 raips.pl
+
+./examples/ralabel:
+total 40
+-r--r--r--  1 carter  staff  3225 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   930 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  9543 Jun 19 10:47 ralabel.c
+
+./examples/ramysql:
+total 928
+-r--r--r--  1 carter  staff    3650 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    2269 Apr 17 12:21 README
+-r--r--r--  1 carter  staff   65169 Apr 18 14:18 rasql.c
+-r--r--r--  1 carter  staff  323761 Apr 18 15:04 rasqlinsert.c
+-r--r--r--  1 carter  staff    6860 Apr 17 12:22 rasqlinsert.h
+-r--r--r--  1 carter  staff   53572 Apr 17 12:22 rasqltimeindex.c
+-r--r--r--  1 carter  staff    4739 Apr 17 12:22 rasqltimeindex.h
+
+./examples/rapath:
+total 88
+-r--r--r--  1 carter  staff   3218 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    954 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  31558 Apr 17 12:22 rapath.c
+-r--r--r--  1 carter  staff   1295 Apr 17 12:22 rapath.h
+
+./examples/rapolicy:
+total 80
+-r--r--r--  1 carter  staff   3232 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    949 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  29023 Apr 17 12:22 rapolicy.c
+
+./examples/raports:
+total 24
+-r--r--r--  1 carter  staff  3182 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   926 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  4023 Apr 17 12:22 raports.pl
+
+./examples/rarpwatch:
+total 88
+-r--r--r--  1 carter  staff   3760 May  9 10:17 Makefile.in
+-r--r--r--  1 carter  staff    963 Apr 17 12:22 README
+-r--r--r--  1 carter  staff  30151 Apr 18 15:04 rarpwatch.c
+-r--r--r--  1 carter  staff   1011 Apr 17 12:22 rarpwatch.h
+
+./examples/raservices:
+total 112
+-r--r--r--  1 carter  staff   3443 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    949 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  12572 Jun 15 10:05 raservices.c
+-r--r--r--  1 carter  staff  30735 Apr 17 12:22 rauserdata.c
+
+./examples/rastream:
+total 120
+-r--r--r--  1 carter  staff   3232 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   2583 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  50544 May  7 12:29 rastream.c
+
+./examples/rastrip:
+total 48
+-r--r--r--  1 carter  staff   3225 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff    941 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  12938 Apr 17 12:22 rastrip.c
+
+./examples/ratemplate:
+total 40
+-r--r--r--  1 carter  staff  3247 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   972 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  8882 Apr 17 12:22 ratemplate.c
+
+./examples/ratimerange:
+total 40
+-r--r--r--  1 carter  staff  3249 May  9 10:09 Makefile.in
+-r--r--r--  1 carter  staff   929 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  8810 Apr 17 12:22 ratimerange.c
+
+./examples/ratop:
+total 528
+-r--r--r--  1 carter  staff    3698 May  9 10:17 Makefile.in
+-r--r--r--  1 carter  staff    2022 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  252717 Apr 17 12:22 ratop.c
+-r--r--r--  1 carter  staff    7058 Apr 17 12:22 ratop.h
+
+./include:
+total 1208
+-r--r--r--   1 carter  staff    2219 Apr 17 12:21 Makefile.in
+drwxr-xr-x  15 carter  staff     510 Apr 17 12:21 argus
+-r--r--r--   1 carter  staff     612 Apr 17 12:21 argus_8021q.h
+-r--r--r--   1 carter  staff   55153 Jun 15 10:05 argus_client.h
+-r--r--r--   1 carter  staff   48803 Jun 15 10:05 argus_cluster.h
+-r--r--r--   1 carter  staff    7280 Apr 17 12:22 argus_compat.h
+-r--r--r--   1 carter  staff   14420 Apr 17 12:24 argus_config.h.in
+-r--r--r--   1 carter  staff    2174 Apr 17 12:22 argus_debug.h
+-r--r--r--   1 carter  staff   98478 Apr 17 12:22 argus_def.h
+-r--r--r--   1 carter  staff    2995 Apr 17 12:22 argus_dscodepoints.h
+-r--r--r--   1 carter  staff    3692 Apr 17 12:22 argus_encapsulations.h
+-r--r--r--   1 carter  staff   11835 Apr 17 12:22 argus_ethernames.h
+-r--r--r--   1 carter  staff    3772 Apr 17 12:21 argus_ethertype.h
+-r--r--r--   1 carter  staff   11137 Apr 17 12:22 argus_event.h
+-rw-r--r--   1 carter  staff    9095 Jun 19 10:33 argus_filter.h
+-r--r--r--   1 carter  staff    1147 Apr 17 12:21 argus_gmpls.h
+-r--r--r--   1 carter  staff    1193 Apr 17 12:22 argus_grep.h
+-r--r--r--   1 carter  staff    4546 Apr 17 12:22 argus_histo.h
+-r--r--r--   1 carter  staff    3387 Apr 17 12:22 argus_int.h
+-r--r--r--   1 carter  staff   18600 May  9 10:17 argus_isis.h
+-rw-r--r--   1 carter  staff    8337 Jun 19 10:29 argus_label.h
+-r--r--r--   1 carter  staff    4003 Apr 17 12:21 argus_llc.h
+-r--r--r--   1 carter  staff    9966 Apr 17 12:22 argus_main.h
+-r--r--r--   1 carter  staff    5684 Apr 17 12:22 argus_mdp.h
+-r--r--r--   1 carter  staff   26521 Apr 17 12:22 argus_metric.h
+-r--r--r--   1 carter  staff    1928 Apr 17 12:22 argus_namedb.h
+-r--r--r--   1 carter  staff    4308 Apr 17 12:22 argus_os.h
+-r--r--r--   1 carter  staff   30359 Apr 17 12:22 argus_out.h
+-r--r--r--   1 carter  staff   12496 Jun 15 10:05 argus_parser.h
+-r--r--r--   1 carter  staff   16511 Apr 17 12:22 argus_sort.h
+-r--r--r--   1 carter  staff    2457 Apr 17 12:22 argus_udt.h
+-rw-r--r--   1 carter  staff  109710 Jun 19 10:40 argus_util.h
+drwxr-xr-x   8 carter  staff     272 Apr 17 12:21 cygwin-include
+drwxr-xr-x   4 carter  staff     136 May  8 16:18 net
+drwxr-xr-x   3 carter  staff     102 Apr 17 12:21 netinet
+-r--r--r--   1 carter  staff    1207 Apr 17 12:22 rabins.h
+-r--r--r--   1 carter  staff    6251 Jun 15 10:05 radium.h
+-r--r--r--   1 carter  staff    2747 Apr 17 12:22 rapolicy.h
+-r--r--r--   1 carter  staff    2715 Apr 17 12:22 rasplit.h
+
+./include/argus:
+total 312
+-r--r--r--  1 carter  staff  22224 Apr 17 12:21 CflowdFlowPdu.h
+-r--r--r--  1 carter  staff   3812 Apr 17 12:21 bootp.h
+-r--r--r--  1 carter  staff   3262 Apr 17 12:21 cflowd.h
+-r--r--r--  1 carter  staff   4573 Apr 17 12:22 cons_def.h
+-r--r--r--  1 carter  staff   5087 Apr 17 12:22 cons_out.h
+-r--r--r--  1 carter  staff   8377 Apr 17 12:22 extract.h
+-r--r--r--  1 carter  staff   3713 Apr 17 12:22 fddi.h
+-r--r--r--  1 carter  staff   9150 Apr 17 12:22 gencode.h
+-r--r--r--  1 carter  staff    956 Apr 17 12:21 global.h
+-r--r--r--  1 carter  staff   1470 Apr 17 12:21 md5.h
+-r--r--r--  1 carter  staff   2424 Apr 17 12:21 ppp.h
+-r--r--r--  1 carter  staff   4836 Apr 17 12:21 saslint.h
+-r--r--r--  1 carter  staff  60355 Apr 17 12:21 sflow.h
+
+./include/cygwin-include:
+total 0
+drwxr-xr-x   3 carter  staff  102 Apr 17 12:21 arpa
+drwxr-xr-x   4 carter  staff  136 Apr 17 12:21 linux
+drwxr-xr-x   3 carter  staff  102 Apr 17 12:21 net
+drwxr-xr-x  15 carter  staff  510 Apr 17 12:21 netinet
+drwxr-xr-x   3 carter  staff  102 Apr 17 12:21 protocols
+drwxr-xr-x   3 carter  staff  102 Apr 17 12:21 sys
+
+./include/cygwin-include/arpa:
+total 8
+-r--r--r--  1 carter  staff  2822 Apr 17 12:21 tftp.h
+
+./include/cygwin-include/linux:
+total 16
+-r--r--r--  1 carter  staff  1728 Apr 17 12:21 if_arp.h
+-r--r--r--  1 carter  staff  3092 Apr 17 12:21 igmp.h
+
+./include/cygwin-include/net:
+total 8
+-r--r--r--  1 carter  staff  1734 Apr 17 12:21 if_arp.h
+
+./include/cygwin-include/netinet:
+total 136
+-r--r--r--  1 carter  staff  8866 Apr 17 12:21 icmp6.h
+-r--r--r--  1 carter  staff  1984 Apr 17 12:21 if_ether.h
+-r--r--r--  1 carter  staff  3480 Apr 17 12:21 igmp.h
+-r--r--r--  1 carter  staff   749 Apr 17 12:21 in_systm.h
+-r--r--r--  1 carter  staff  4084 Apr 17 12:21 ip.h
+-r--r--r--  1 carter  staff  3729 Apr 17 12:21 ip6.h
+-r--r--r--  1 carter  staff  5013 Apr 17 12:21 ip_icmp.h
+-r--r--r--  1 carter  staff  3198 Apr 17 12:21 ip_var.h
+-r--r--r--  1 carter  staff  1500 Apr 17 12:21 tcp.h
+-r--r--r--  1 carter  staff  6380 Apr 17 12:21 tcp_var.h
+-r--r--r--  1 carter  staff  1033 Apr 17 12:21 tcpip.h
+-r--r--r--  1 carter  staff   711 Apr 17 12:21 udp.h
+-r--r--r--  1 carter  staff  1086 Apr 17 12:21 udp_var.h
+
+./include/cygwin-include/protocols:
+total 8
+-r--r--r--  1 carter  staff  2340 Apr 17 12:21 routed.h
+
+./include/cygwin-include/sys:
+total 8
+-r--r--r--  1 carter  staff  49 Apr 17 12:21 mbuf.h
+
+./include/net:
+total 40
+-r--r--r--  1 carter  staff   2172 May  8 16:18 etherdefs.h
+-r--r--r--  1 carter  staff  12644 Apr 17 12:21 nff.h
+
+./include/netinet:
+total 8
+-r--r--r--  1 carter  staff  2426 Apr 17 12:21 rtp.h
+
+./lib:
+total 16
+-r--r--r--  1 carter  staff   364 Apr 17 12:22 argus-clients.pc.in
+-r--r--r--  1 carter  staff  2051 Jun 15 16:28 argus-clients.spec
+
+./man:
+total 0
+drwxr-xr-x  24 carter  staff  816 Apr 18 15:15 man1
+drwxr-xr-x   7 carter  staff  238 Apr 17 12:21 man5
+drwxr-xr-x   3 carter  staff  102 Apr 17 12:21 man8
+
+./man/man1:
+total 400
+-r--r--r--  1 carter  staff  45315 Apr 30 19:34 ra.1
+-r--r--r--  1 carter  staff  17968 Apr 17 12:21 rabins.1
+-r--r--r--  1 carter  staff   8222 Apr 18 14:09 racluster.1
+-r--r--r--  1 carter  staff   2778 Apr 17 12:21 raconvert.1
+-r--r--r--  1 carter  staff   4361 Apr 17 12:21 racount.1
+-r--r--r--  1 carter  staff   4918 Apr 17 12:21 radump.1
+-r--r--r--  1 carter  staff   5060 Apr 17 12:21 raevent.1
+-r--r--r--  1 carter  staff   2286 Apr 17 12:21 rafilteraddr.1
+-r--r--r--  1 carter  staff   6640 Apr 17 12:21 ragraph.1
+-r--r--r--  1 carter  staff   4085 Apr 17 12:21 ragrep.1
+-r--r--r--  1 carter  staff   5446 Jun 11 15:04 rahisto.1
+-r--r--r--  1 carter  staff   2411 Apr 17 12:21 ralabel.1
+-r--r--r--  1 carter  staff   1714 Apr 17 12:21 ranonymize.1
+-r--r--r--  1 carter  staff  10884 Apr 17 12:21 rapath.1
+-r-xr-xr-x  1 carter  staff   4074 Apr 17 12:21 rapolicy.1
+-r--r--r--  1 carter  staff   4671 Apr 17 12:21 rasort.1
+-r--r--r--  1 carter  staff   6863 Apr 17 12:21 rasplit.1
+-r--r--r--  1 carter  staff   2278 Apr 17 12:21 rasql.1
+-r--r--r--  1 carter  staff   6848 Apr 17 12:21 rasqlinsert.1
+-r--r--r--  1 carter  staff   2488 Apr 17 12:21 rasqltimeindex.1
+-r--r--r--  1 carter  staff   7335 Apr 17 12:21 rastream.1
+-r--r--r--  1 carter  staff   3336 Apr 17 12:21 rastrip.1
+
+./man/man5:
+total 112
+-r--r--r--  1 carter  staff  10258 Apr 17 12:21 racluster.5
+-r-xr-xr-x  1 carter  staff  10688 Apr 17 12:21 radium.conf.5
+-r--r--r--  1 carter  staff   6756 Apr 17 12:21 ralabel.conf.5
+-r--r--r--  1 carter  staff   7466 Apr 17 12:21 ranonymize.5
+-r--r--r--  1 carter  staff  14104 Apr 17 12:21 rarc.5
+
+./man/man8:
+total 16
+-r-xr-xr-x  1 carter  staff  7844 Apr 17 12:21 radium.8
+
+./support:
+total 0
+drwxr-xr-x  19 carter  staff  646 Apr 17 12:21 Config
+drwxr-xr-x   4 carter  staff  136 Apr 17 12:21 Database
+drwxr-xr-x   8 carter  staff  272 Apr 17 12:21 Startup
+drwxr-xr-x   3 carter  staff  102 Apr 17 12:21 System
+
+./support/Config:
+total 20656
+-r--r--r--  1 carter  staff     2510 Apr 17 12:21 README
+-r--r--r--  1 carter  staff  8506656 Apr 17 12:21 delegated-ipv4-latest
+-r--r--r--  1 carter  staff     1105 Apr 17 12:21 excel.rc
+-r--r--r--  1 carter  staff     1627 Apr 17 12:21 iana-address-file
+-r--r--r--  1 carter  staff    24990 Apr 17 12:21 iana-ipv4-address
+-r--r--r--  1 carter  staff    28071 Apr 17 12:21 iana-multicast-address
+-r--r--r--  1 carter  staff   756315 Apr 17 12:21 iana-port-numbers
+-r--r--r--  1 carter  staff     2295 Apr 17 12:21 racluster.conf
+-r--r--r--  1 carter  staff    10559 Apr 17 12:21 radium.conf
+-r-xr-xr-x  1 carter  staff     1085 Apr 17 12:21 ragetcountrycodes.sh
+-r--r--r--  1 carter  staff     5780 Apr 17 12:21 ralabel.conf
+-r--r--r--  1 carter  staff    12197 Apr 17 12:21 ranonymize.conf
+-r--r--r--  1 carter  staff    14714 Apr 17 12:21 rarc
+-r--r--r--  1 carter  staff     2232 Apr 17 12:21 rarc.print.all.conf
+-r--r--r--  1 carter  staff      591 Apr 17 12:21 rastream.sh
+-r--r--r--  1 carter  staff    43450 Apr 17 12:21 std.sig
+-r--r--r--  1 carter  staff  1129747 Apr 17 12:21 wireshark.manuf.txt
+
+./support/Database:
+total 16
+-r--r--r--  1 carter  staff  3846 Apr 17 12:21 MySQL.Archive.sh
+-r--r--r--  1 carter  staff  2545 Apr 17 12:21 README
+
+./support/Startup:
+total 56
+-r--r--r--  1 carter  staff  4348 Apr 17 12:21 README
+-r--r--r--  1 carter  staff   689 Apr 17 12:21 com.qosient.radium.plist
+-r--r--r--  1 carter  staff   866 Apr 17 12:21 com.qosient.rasplit.plist
+-r-xr-xr-x  1 carter  staff  2736 Apr 17 12:21 radium
+-r--r--r--  1 carter  staff   532 Apr 17 12:21 radium.service
+-r-xr-xr-x  1 carter  staff  2673 Apr 17 12:21 rasplit
+
+./support/System:
+total 8
+-r--r--r--  1 carter  staff  1445 Apr 17 12:21 magic
